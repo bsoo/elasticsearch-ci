@@ -1,0 +1,10 @@
+network.host:
+- _local_
+- _site_
+network.publish_host: _local_
+script.inline: on
+# https://www.elastic.co/guide/en/elasticsearch/guide/current/_limiting_memory_usage.html#fielddata-size
+# Place an upper limit to the fielddata cache to avoid OOM
+indices.fielddata.cache.size: 40%
+# Checks to see whether the query size is too large before data is loaded
+indices.breaker.fielddata.limit: 50%
