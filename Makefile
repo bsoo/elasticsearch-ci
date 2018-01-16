@@ -1,4 +1,4 @@
-NAME = goka/elasticsearch-ci
+NAME = bsoo/elasticsearch-ci
 VERSION = latest
 SHELL = /bin/bash
 
